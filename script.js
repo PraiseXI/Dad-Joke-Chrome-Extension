@@ -14,3 +14,6 @@ async function fetchJoke() {
     document.getElementById("punchline").innerHTML = record.body[0].punchline
 }
 fetchJoke();
+//TODO: CREATE BUTTON TO REVEAL PUNCHLINE
+//TODO: CREATE BUTTON TO CREATE NEW JOKE
+//TODO: IMPROVE VISUAL
