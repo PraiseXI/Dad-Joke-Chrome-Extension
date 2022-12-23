@@ -1,4 +1,9 @@
-async function fetchJoke() {
+async function run() {
+    joke = getJoke()
+    outputJoke(joke)
+}
+async function getJoke () {
+    //get Joke
     const options = {
         method: 'GET',
         headers: {
@@ -12,7 +17,8 @@ async function fetchJoke() {
 
     document.getElementById("setup").innerHTML = record.setup
     document.getElementById("punchline").innerHTML = record.punchline
-
+}
+async function outputJoke (record) {
     const revealButton = document.getElementById("button");
     const refreshButton = document.getElementById("refresh");
     const punchLine = document.getElementById("punchline");
@@ -30,6 +36,6 @@ async function fetchJoke() {
     });
 
 }
-fetchJoke();
+run();
 
 //TODO: IMPROVE VISUAL
