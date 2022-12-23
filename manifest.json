@@ -1,5 +1,5 @@
 {
-    "name" : "Dad Joke Generator",
+    "name" : "Random Joke Generator",
     "version" : "1.0.0",
     "description" : "This is an extension that generates a randomised jokes starting with the joke setup and then the punchline",
     "manifest_version" : 3,
